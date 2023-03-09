@@ -1,6 +1,6 @@
-::placeholder { 
+::placeholder {
   color: white;
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 input {
@@ -14,8 +14,30 @@ input {
   align-items: center;
   justify-content: center;
   color: white;
-  background: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?w=1060&t=st=1678245175~exp=1678245775~hmac=ba39b375167c1c0aeddef077a7d7df06013fa45e96ee562d696735edb692b8a6)
-    no-repeat center center fixed;
+  background: hsla(205, 46%, 10%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1 );
   background-size: cover;
 }
 
@@ -26,14 +48,12 @@ input {
   padding: 30px 20px;
 }
 
-table tbody{
+table tbody {
   font-weight: 400;
   color: white;
 }
 
-
-table thead th{
+table thead th {
   font-weight: 400;
   color: white;
 }
-

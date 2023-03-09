@@ -1,6 +1,5 @@
 import axios from 'axios'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './Book.css'
 
@@ -14,12 +13,12 @@ export default function Book() {
   })
 
   useEffect(() => {
-    if (id === 'new') return
+    if (!id) return
 
     const fetchBook = async () => {
       try {
         const response = await axios.get(
-          'https://sahabatpeduliyatim.com/public/api/books'
+          `https://sahabatpeduliyatim.com/public/api/books/${id}`
         )
         setBook(response.data)
       } catch (e) {
@@ -54,6 +53,7 @@ export default function Book() {
   }
 
   return (
+
     <div className='post__wrapper'>
       <div className='container'>
         <form className='post'>
