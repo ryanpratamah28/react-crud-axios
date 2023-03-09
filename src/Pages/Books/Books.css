@@ -1,0 +1,39 @@
+::placeholder { 
+  color: white;
+  opacity: 0.5; 
+}
+
+input {
+  color: white;
+}
+
+.posts {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?w=1060&t=st=1678245175~exp=1678245775~hmac=ba39b375167c1c0aeddef077a7d7df06013fa45e96ee562d696735edb692b8a6)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px 20px;
+}
+
+table tbody{
+  font-weight: 400;
+  color: white;
+}
+
+
+table thead th{
+  font-weight: 400;
+  color: white;
+}
+
